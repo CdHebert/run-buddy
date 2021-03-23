@@ -44,7 +44,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
@@ -83,6 +83,7 @@ section {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
+    align-items: flex-start;
 }
 
 .hero-cta {
@@ -91,7 +92,7 @@ section {
     margin: 3.5%;
     font-size: 18px;
     color: #fff;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -209,7 +210,7 @@ section {
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     border-bottom: 3px solid;
 }
@@ -262,32 +263,44 @@ section {
 /* REACH OUT STYLES START */
 .contact {
     background: #024e76;
-}
-
-.contact-info {
+  }
+  
+  .contact h2 {
+    color: #fce138;
+  }
+  
+  .contact-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.contact h2 {
-    color: #fce138;
-}
-
-.contact-info iframe {
+  }
+  
+  .contact-info > * {
+    flex: 1;
+    margin: 15px;
+  }
+  
+  .contact-info iframe {
     height: 400px;
-}
-
-.contact-info div {
+  }
+  
+  .contact-info div {
     color: white;
-}
-
-.contact-info h3{
+  }
+  
+  .contact-info h3 {
     color: #fce138;
     font-size: 32px;
-}
-
-.contact-form input, .contact-form textarea {
+  }
+  
+  .contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  .contact-form input, .contact-form textarea {
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -296,32 +309,40 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
-}
-
-.contact-form button {
+  }
+  
+  .contact-form button {
     width: 100%;
     border: none;
     background: #fce138;
     color: #024e76;
     text-align: center;
     padding: 15px 0;
-    font-size: ;
-}
-
-.contact-info p, .contact-info address {
-    margin: 20px 0;
-    line-height: 1.5;
     font-size: 16px;
-    font-style: normal;
-}
-
-.contact-info a {
+  }
+  
+  .contact-info a {
     color: #fce138;
+  }
+  
+  
+  /* REACH OUT STYLES END */
+
+/* UTILITIES */
+.text-left {
+    text-align: left;
 }
 
-/* REACH OUT STYLES END */
+.text-right {
+    text-align: right;
+}
 
-/* flex row */
 .flex-row {
     display: flex;
+}
+
+/* media querys */
+
+@media screen and (max-width: 980px) {
+
 }
